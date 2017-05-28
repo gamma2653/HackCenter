@@ -1,8 +1,11 @@
 package com.gamsion.chris;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
-
-import javax.management.RuntimeErrorException;
 
 public class DatabaseControl {
 	public HashMap<String,HashMap<String,String>> parseString(String s){
@@ -62,6 +65,29 @@ public class DatabaseControl {
 	
 	public String returnString(String stringName){
 		return stringName;
+		
+	}
+	
+	public Hackathon Parse(File file){
+
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line;
+			StringBuilder sb = new StringBuilder();
+			try {
+				while ((line = br.readLine())!=null){
+					sb.append(line+"\n");
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	
 		
 	}
 	
