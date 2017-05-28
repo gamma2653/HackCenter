@@ -6,20 +6,20 @@ import java.util.List;
 import java.util.Map;
 
 public class Hackathon {
-	String name;
-	String description;
-	Map<String, Map<String, String>> organizers = new HashMap<String, Map<String, String>>();
-	Map<String, Map<String, String>> students =  new HashMap<String, Map<String, String>>();
-	List<Event> events = new ArrayList<Event>();
+	public String name;
+	public String description;
+	public HashMap<String, HashMap<String, String>> organizers = new HashMap<String, HashMap<String, String>>();
+	public HashMap<String, HashMap<String, String>> students =  new HashMap<String, HashMap<String, String>>();
+	public HashMap<String, HashMap<String, String>> events = new HashMap<String, HashMap<String, String>>();
 
-	public Hackathon(String name, String description, Map<String, Map<String, String>> organizers, Map<String, Map<String, String>> students, List<Event> events){
+	public Hackathon(String name, String description, HashMap<String, HashMap<String, String>> organizers, HashMap<String, HashMap<String, String>> students, HashMap<String, HashMap<String, String>> events){
 		this.name = name;
 		this.description = description;
 		this.organizers = organizers;
 		this.students = students;
 		this.events = events;
 	}
-	public class Event{
+	/*public class Event{
 		
 		String name;
 		String description;
@@ -29,7 +29,7 @@ public class Hackathon {
 			this.name = name;
 			this.description = description;
 			this.time = time;
-		}
-	}
+		
+	}*/
 
 }
