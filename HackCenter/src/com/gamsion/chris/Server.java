@@ -4,10 +4,10 @@ import static spark.Spark.post;
 import java.util.HashMap;
 import java.util.Map;
 public class Server {
+	DatabaseControl dc = new DatabaseControl();
 	public static void main(String[] args) {
 		post("/login", (req, res) -> {
-			System.out.println(req.body());
-			System.out.println(stringToMap(req.body()));
+			
 			return "";
 		});
 	}
@@ -22,4 +22,6 @@ public class Server {
 		}
 		return map;
 	}
+	
+	
 }

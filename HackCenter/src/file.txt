@@ -1,0 +1,5 @@
+Organizers:Vincent(password:1234)Christopher DeJesus:(password:4567)
+Students:Sophia Roshal(email:sophia.roshal@gmail.com,phone:9145726209,shirt:small)Erik Batista:(email:erik@gmail.com,phone:123456789,shirt:meduim)
+Name: StuyHacks
+Description: CoolHacks
+Events: CoolHacks(time:2.00,description:cool)
